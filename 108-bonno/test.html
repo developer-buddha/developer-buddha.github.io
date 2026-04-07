@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>108번뇌 심리테스트 | 질문</title>
+  <meta property="og:title" content="108번뇌 심리테스트">
+  <meta property="og:description" content="12가지 질문으로 알아보는 나의 탐진치 성향과 대표 번뇌">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container" id="test-content">
+    <div class="test-header">
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-text" id="progress-text">1 / 12</div>
+      </div>
+    </div>
+
+    <div class="question-card" id="question-card">
+      <div class="question-number" id="q-number">Q1</div>
+      <div class="question-text" id="q-text"></div>
+      <div class="options" id="options"></div>
+    </div>
+
+    <!-- 중간 인용구 (Q6 이후 표시) -->
+    <div class="quote-banner" id="ad-mid" style="display:none;">
+      <p class="quote-text">"마음이 모든 것에 앞서고, 마음이 모든 것을 만든다."</p>
+      <p class="quote-author">— 법구경 第一</p>
+    </div>
+    <!-- TODO: 광고 승인 후 교체
+    <div class="ad-banner" id="ad-mid" style="display:none;"><span>AD</span></div>
+    -->
+  </div>
+
+  <!-- 로딩 화면 -->
+  <div class="container">
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">당신의 번뇌를 분석하고 있습니다...</p>
+    </div>
+  </div>
+
+  <script src="js/test.js"></script>
+</body>
+</html>

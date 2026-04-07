@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 대표 번뇌: 질투(嫉妬) | 108번뇌 심리테스트</title>
+
+  <!-- OG Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="나의 대표 번뇌: 질투(嫉妬)">
+  <meta property="og:description" content="비교하는 거울 — 108번뇌 심리테스트로 알아본 나의 대표 번뇌">
+  <meta property="og:image" content="images/og-result-05.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google AdSense -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <!-- 상단 프로모션 (광고 승인 전 임시) -->
+  <a href="../index.html" class="promo-banner">
+    <div class="promo-icon">🔮</div>
+    <div class="promo-text">
+      <div class="promo-title">마음 연구소</div>
+      <div class="promo-desc">더 많은 심리테스트를 만나보세요</div>
+    </div>
+    <div class="promo-arrow">→</div>
+  </a>
+  <!-- TODO: 광고 승인 후 교체
+  <div class="ad-banner" id="ad-top"><span>AD</span></div>
+  -->
+
+  <div class="container">
+    <div class="result-page">
+
+      <!-- 메인 결과 카드 -->
+      <div class="result-main-card" id="result-main-card">
+        <div class="result-label">당 신 의 대 표 번 뇌</div>
+        <span class="result-icon" id="result-icon"></span>
+        <h1 class="result-name" id="result-name"></h1>
+        <p class="result-name-cn" id="result-name-cn"></p>
+        <p class="result-tagline" id="result-tagline"></p>
+      </div>
+
+      <!-- 점수 카드 -->
+      <div class="score-card">
+        <h3>탐진치 성향 분석</h3>
+        <div class="score-row">
+          <span class="score-label tam">탐</span>
+          <div class="score-bar-bg"><div class="score-bar-fill tam" id="bar-tam"></div></div>
+          <span class="score-value" id="val-tam">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label jin">진</span>
+          <div class="score-bar-bg"><div class="score-bar-fill jin" id="bar-jin"></div></div>
+          <span class="score-value" id="val-jin">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label chi">치</span>
+          <div class="score-bar-bg"><div class="score-bar-fill chi" id="bar-chi"></div></div>
+          <span class="score-value" id="val-chi">0점</span>
+        </div>
+      </div>
+
+      <!-- 해설 카드 -->
+      <div class="detail-card">
+        <h3>📖 번뇌 해설</h3>
+        <p id="result-desc"></p>
+      </div>
+
+      <!-- 수행법 카드 -->
+      <div class="detail-card">
+        <h3>🙏 극복 수행법</h3>
+        <ul class="practice-list" id="practice-list"></ul>
+      </div>
+
+      <!-- 액션 버튼 -->
+      <div class="action-buttons">
+        <button class="btn-retry" onclick="location.href='index.html'">다시 테스트하기</button>
+        <button class="btn-kakao" onclick="shareKakao()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.58 2 11c0 2.83 1.88 5.32 4.73 6.73-.16.58-.6 2.15-.69 2.48-.11.4.15.4.31.29.13-.08 2.04-1.38 2.86-1.94.88.13 1.8.2 2.79.2 5.5 0 10-3.58 10-8s-4.5-8-10-8z"/></svg>
+          카카오톡 공유
+        </button>
+      </div>
+
+      <!-- URL 복사 버튼 -->
+      <div style="text-align:center; margin-top:12px;">
+        <button class="btn-retry" onclick="copyUrl()" style="width:100%; font-size:0.9rem; padding:12px;">
+          🔗 결과 링크 복사하기
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 하단 프로모션 (광고 승인 전 임시) -->
+  <a href="index.html" class="promo-banner">
+    <div class="promo-icon">🪷</div>
+    <div class="promo-text">
+      <div class="promo-title">다시 테스트하기</div>
+      <div class="promo-desc">친구의 번뇌도 함께 알아보세요</div>
+    </div>
+    <div class="promo-arrow">→</div>
+  </a>
+  <!-- TODO: 광고 승인 후 교체
+  <div class="ad-banner" id="ad-bottom"><span>AD</span></div>
+  -->
+
+  <div class="footer">
+    <p>본 테스트는 재미를 위한 것이며 전문 심리 진단이 아닙니다.</p>
+  </div>
+
+  <!-- Kakao SDK -->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" crossorigin="anonymous"></script>
+  <script>
+    // TODO: 카카오 개발자 사이트에서 JavaScript 키를 발급받아 입력하세요
+    // https://developers.kakao.com
+    // Kakao.init('YOUR_KAKAO_JAVASCRIPT_KEY');
+  </script>
+  <script src="js/result.js"></script>
+</body>
+</html>
