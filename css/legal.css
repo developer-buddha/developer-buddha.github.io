@@ -1,0 +1,109 @@
+/* Legal Pages (Privacy / Terms) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-attachment: fixed;
+  color: #e0e0e0;
+  min-height: 100vh;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: #f5af19; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.legal-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.legal-header {
+  text-align: center;
+  padding: 30px 0 40px;
+}
+
+.legal-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.legal-header .updated {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.legal-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 40px 32px;
+}
+
+.legal-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f5af19;
+  margin: 28px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.legal-card h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.legal-card p,
+.legal-card li {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 12px;
+}
+
+.legal-card ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.legal-card li {
+  margin-bottom: 6px;
+}
+
+.legal-card strong {
+  color: #fff;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 24px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.back-link:hover {
+  background: rgba(255,255,255,0.12);
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .legal-container { padding: 24px 16px 60px; }
+  .legal-card { padding: 28px 22px; }
+  .legal-header h1 { font-size: 1.5rem; }
+}
