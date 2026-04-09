@@ -458,6 +458,7 @@ a {
 .score-label.tam { color: #e74c3c; }
 .score-label.jin { color: #a855f7; }
 .score-label.chi { color: #3498db; }
+.score-label.pos { color: #10b981; }
 
 .score-bar-bg {
   flex: 1;
@@ -477,6 +478,7 @@ a {
 .score-bar-fill.tam { background: linear-gradient(90deg, #e74c3c, #ff6b6b); }
 .score-bar-fill.jin { background: linear-gradient(90deg, #8e44ad, #a855f7); }
 .score-bar-fill.chi { background: linear-gradient(90deg, #2980b9, #3498db); }
+.score-bar-fill.pos { background: linear-gradient(90deg, #059669, #10b981); }
 
 .score-value {
   width: 36px;

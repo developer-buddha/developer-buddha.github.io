@@ -4,7 +4,8 @@ const questions = [
     options: [
       { text: "나도 빨리 올라가야 하는데... 더 노력해서 따라잡자", type: "tam" },
       { text: "왜 쟤가 먼저지? 나보다 뭘 잘했다고?", type: "jin" },
-      { text: "뭐... 승진이 뭐 그리 대단한 건가 싶다", type: "chi" }
+      { text: "뭐... 승진이 뭐 그리 대단한 건가 싶다", type: "chi" },
+      { text: "진심으로 축하해. 나는 내 속도로 내 길을 가면 돼", type: "pos" }
     ]
   },
   {
@@ -12,7 +13,8 @@ const questions = [
     options: [
       { text: "나도 저런 삶을 살고 싶다! 어떻게 하면 될까?", type: "tam" },
       { text: "다 꾸며낸 거겠지... 솔직히 좀 짜증나", type: "jin" },
-      { text: "별 생각 없이 스크롤을 넘긴다", type: "chi" }
+      { text: "별 생각 없이 스크롤을 넘긴다", type: "chi" },
+      { text: "멋지네. 각자의 삶이 있고, 나는 내 삶에 감사하자", type: "pos" }
     ]
   },
   {
@@ -20,7 +22,8 @@ const questions = [
     options: [
       { text: "어떻게든 사야 해! 할부라도 알아봐야지", type: "tam" },
       { text: "왜 이렇게 비싸? 세상이 불합리해", type: "jin" },
-      { text: "그냥 안 사면 되지 뭐, 귀찮아", type: "chi" }
+      { text: "그냥 안 사면 되지 뭐, 귀찮아", type: "chi" },
+      { text: "정말 필요한 건지 며칠 생각해보고 결정하자", type: "pos" }
     ]
   },
   {
@@ -28,7 +31,8 @@ const questions = [
     options: [
       { text: "기다리는 동안 쇼핑이나 할까? 시간이 아깝잖아", type: "tam" },
       { text: "30분이나 늦다니... 진짜 화난다", type: "jin" },
-      { text: "뭐 그럴 수도 있지, 나도 가끔 늦으니까", type: "chi" }
+      { text: "뭐 그럴 수도 있지, 나도 가끔 늦으니까", type: "chi" },
+      { text: "무슨 일 있나 걱정되네. 안전하게만 왔으면 좋겠다", type: "pos" }
     ]
   },
   {
@@ -36,7 +40,8 @@ const questions = [
     options: [
       { text: "인정, 그런데 빨리 만회할 방법을 찾아야 해", type: "tam" },
       { text: "기분 나쁘다. 꼭 그렇게 말해야 했어?", type: "jin" },
-      { text: "아 그래? 뭐... 실수할 수도 있지", type: "chi" }
+      { text: "아 그래? 뭐... 실수할 수도 있지", type: "chi" },
+      { text: "알려줘서 고마워. 덕분에 하나 배웠네", type: "pos" }
     ]
   },
   {
@@ -44,7 +49,8 @@ const questions = [
     options: [
       { text: "무조건 해야지! 이런 기회를 놓칠 수 없어", type: "tam" },
       { text: "왜 하필 지금? 타이밍이 안 좋아서 짜증나", type: "jin" },
-      { text: "글쎄... 꼭 해야 하나? 지금도 충분한데", type: "chi" }
+      { text: "글쎄... 꼭 해야 하나? 지금도 충분한데", type: "chi" },
+      { text: "차분히 생각해보고, 마음이 이끄는 쪽으로 결정하자", type: "pos" }
     ]
   },
   {
@@ -52,7 +58,8 @@ const questions = [
     options: [
       { text: "다시 도전해야지. 이번엔 반드시 잡는다", type: "tam" },
       { text: "세상이 불공평해. 이만큼 노력했는데!", type: "jin" },
-      { text: "역시 안 될 거였어... 기대를 안 했어야 했는데", type: "chi" }
+      { text: "역시 안 될 거였어... 기대를 안 했어야 했는데", type: "chi" },
+      { text: "아쉽지만 과정에서 많이 배웠어. 그걸로 충분해", type: "pos" }
     ]
   },
   {
@@ -60,7 +67,8 @@ const questions = [
     options: [
       { text: "오늘만 먹자! 내일부터 다시 하면 돼", type: "tam" },
       { text: "왜 하필 다이어트할 때 이런 유혹이 오는 거야", type: "jin" },
-      { text: "다이어트? 아 맞다... 뭐 한 번쯤이야", type: "chi" }
+      { text: "다이어트? 아 맞다... 뭐 한 번쯤이야", type: "chi" },
+      { text: "한입 감사히 맛보고, 균형을 지키면 돼", type: "pos" }
     ]
   },
   {
@@ -68,7 +76,8 @@ const questions = [
     options: [
       { text: "더 성공해서 인정받아야겠어!", type: "tam" },
       { text: "나를 무시해? 두고 봐", type: "jin" },
-      { text: "신경 쓰기 귀찮다... 그냥 내 길 간다", type: "chi" }
+      { text: "신경 쓰기 귀찮다... 그냥 내 길 간다", type: "chi" },
+      { text: "내 가치는 남의 시선에 달려있지 않아. 괜찮아", type: "pos" }
     ]
   },
   {
@@ -76,7 +85,8 @@ const questions = [
     options: [
       { text: "내일은 이것도 하고 저것도 해야 하는데...", type: "tam" },
       { text: "오늘 그 사람이 한 말이 자꾸 신경 쓰인다", type: "jin" },
-      { text: "그냥 빨리 자고 싶다... 생각하기 싫어", type: "chi" }
+      { text: "그냥 빨리 자고 싶다... 생각하기 싫어", type: "chi" },
+      { text: "오늘 하루도 수고했다. 편안히 내려놓고 쉬자", type: "pos" }
     ]
   },
   {
@@ -84,7 +94,8 @@ const questions = [
     options: [
       { text: "큰 집, 좋은 차! 갖고 싶은 거 다 산다", type: "tam" },
       { text: "나를 무시했던 사람들에게 보여주고 싶다", type: "jin" },
-      { text: "일단 넣어두고... 천천히 생각해야지", type: "chi" }
+      { text: "일단 넣어두고... 천천히 생각해야지", type: "chi" },
+      { text: "소중한 사람들과 나누고 의미 있는 일에 쓰고 싶다", type: "pos" }
     ]
   },
   {
@@ -92,13 +103,14 @@ const questions = [
     options: [
       { text: "최대한 이익 되는 쪽으로! 꼼꼼히 따져본다", type: "tam" },
       { text: "왜 나만 이런 결정을 해야 해? 스트레스야", type: "jin" },
-      { text: "에이 모르겠다, 될 대로 되라!", type: "chi" }
+      { text: "에이 모르겠다, 될 대로 되라!", type: "chi" },
+      { text: "마음을 차분히 하고, 직관과 이성 모두에 귀 기울인다", type: "pos" }
     ]
   }
 ];
 
 let current = 0;
-const scores = { tam: 0, jin: 0, chi: 0 };
+const scores = { tam: 0, jin: 0, chi: 0, pos: 0 };
 
 function init() {
   renderQuestion();
@@ -166,8 +178,10 @@ function goToResult() {
   const t = scores.tam;
   const j = scores.jin;
   const c = scores.chi;
+  const p = scores.pos;
 
-  // determine dominant type
+  // 긍정 응답이 매우 많은 경우 (8개 이상) → 가장 낮은 번뇌 유형의 weak 결과로
+  // 그 외에는 탐/진/치 중 가장 높은 것으로 결정
   let dominant, dominantScore;
   if (t >= j && t >= c) {
     dominant = 'tam';
@@ -180,10 +194,10 @@ function goToResult() {
     dominantScore = c;
   }
 
-  // determine strength
+  // 강도: 긍정 응답이 많을수록 약한 결과로 (선택지 4개 중 1개가 긍정이므로)
   let strength;
-  if (dominantScore >= 8) strength = 'strong';
-  else if (dominantScore >= 5) strength = 'mid';
+  if (dominantScore >= 7) strength = 'strong';
+  else if (dominantScore >= 4) strength = 'mid';
   else strength = 'weak';
 
   // map to result page
@@ -194,7 +208,7 @@ function goToResult() {
   };
 
   const resultId = resultMap[dominant + '-' + strength];
-  window.location.href = 'result-' + resultId + '.html?t=' + t + '&j=' + j + '&c=' + c;
+  window.location.href = 'result-' + resultId + '.html?t=' + t + '&j=' + j + '&c=' + c + '&p=' + p;
 }
 
 document.addEventListener('DOMContentLoaded', init);

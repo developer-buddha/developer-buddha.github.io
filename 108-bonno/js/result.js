@@ -144,7 +144,8 @@ function initResult() {
   const t = hasParams ? (parseInt(params.get('t')) || 0) : data.defaultScores.t;
   const j = hasParams ? (parseInt(params.get('j')) || 0) : data.defaultScores.j;
   const c = hasParams ? (parseInt(params.get('c')) || 0) : data.defaultScores.c;
-  const total = t + j + c || 12;
+  const p = hasParams ? (parseInt(params.get('p')) || 0) : (data.defaultScores.p || 0);
+  const total = t + j + c + p || 12;
 
   // Render main card
   const mainCard = document.getElementById('result-main-card');
@@ -163,11 +164,29 @@ function initResult() {
     document.getElementById('bar-tam').style.width = ((t / total) * 100) + '%';
     document.getElementById('bar-jin').style.width = ((j / total) * 100) + '%';
     document.getElementById('bar-chi').style.width = ((c / total) * 100) + '%';
+    const barPos = document.getElementById('bar-pos');
+    if (barPos) barPos.style.width = ((p / total) * 100) + '%';
   }, 300);
 
   document.getElementById('val-tam').textContent = t + '점';
   document.getElementById('val-jin').textContent = j + '점';
   document.getElementById('val-chi').textContent = c + '점';
+  const valPos = document.getElementById('val-pos');
+  if (valPos) valPos.textContent = p + '점';
+
+  // 마음챙김 메시지
+  const mindfulMsg = document.getElementById('mindful-message');
+  if (mindfulMsg) {
+    if (p >= 8) {
+      mindfulMsg.textContent = '🌟 마음챙김이 매우 높습니다. 이미 번뇌를 다루는 지혜가 있으시네요.';
+    } else if (p >= 5) {
+      mindfulMsg.textContent = '✨ 마음챙김이 잘 자라고 있습니다. 꾸준히 수행해보세요.';
+    } else if (p >= 2) {
+      mindfulMsg.textContent = '🌱 마음챙김의 씨앗이 있어요. 조금씩 키워나가세요.';
+    } else {
+      mindfulMsg.textContent = '💭 마음챙김 연습이 큰 도움이 될 거예요.';
+    }
+  }
 
   // Render practices
   const listEl = document.getElementById('practice-list');
