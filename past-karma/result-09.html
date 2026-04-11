@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="ioeDOJQKzJH5UHhVr9XGqMgl3QtxfnQ2Wxu05IRZ3Dw" />
+  <title>나의 전생 업보: 스쳐간 인연의 바람 | 전생 업보 테스트</title>
+
+  <!-- OG Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="나의 전생 업보: 스쳐간 인연의 바람">
+  <meta property="og:description" content="가벼운 인연의 여운이 남은 영혼 — 전생 업보 테스트로 알아본 나의 전생">
+  <meta property="og:image" content="images/og-result-09.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ4FPFX0TM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XQ4FPFX0TM');
+  </script>
+
+  <!-- Google AdSense -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <!-- 상단 프로모션 -->
+  <a href="../index.html" class="promo-banner">
+    <div class="promo-icon">🔮</div>
+    <div class="promo-text">
+      <div class="promo-title">마음 연구소</div>
+      <div class="promo-desc">더 많은 심리테스트를 만나보세요</div>
+    </div>
+    <div class="promo-arrow">→</div>
+  </a>
+
+  <div class="container">
+    <div class="result-page">
+
+      <!-- 메인 결과 카드 -->
+      <div class="result-main-card" id="result-main-card">
+        <div class="result-label">당 신 의 전 생</div>
+        <span class="result-icon" id="result-icon"></span>
+        <h1 class="result-name" id="result-name"></h1>
+        <p class="result-name-cn" id="result-name-cn"></p>
+        <p class="result-tagline" id="result-tagline"></p>
+      </div>
+
+      <!-- 점수 카드 -->
+      <div class="score-card">
+        <h3>업보 성향 분석</h3>
+        <div class="score-row">
+          <span class="score-label bok">복</span>
+          <div class="score-bar-bg"><div class="score-bar-fill bok" id="bar-bok"></div></div>
+          <span class="score-value" id="val-bok">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label hye">혜</span>
+          <div class="score-bar-bg"><div class="score-bar-fill hye" id="bar-hye"></div></div>
+          <span class="score-value" id="val-hye">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label yeon">연</span>
+          <div class="score-bar-bg"><div class="score-bar-fill yeon" id="bar-yeon"></div></div>
+          <span class="score-value" id="val-yeon">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label go">고</span>
+          <div class="score-bar-bg"><div class="score-bar-fill go" id="bar-go"></div></div>
+          <span class="score-value" id="val-go">0점</span>
+        </div>
+        <div class="score-row">
+          <span class="score-label pos">정화</span>
+          <div class="score-bar-bg"><div class="score-bar-fill pos" id="bar-pos"></div></div>
+          <span class="score-value" id="val-pos">0점</span>
+        </div>
+        <p id="purify-message" style="text-align:center; margin-top:16px; font-size:0.9rem; color:rgba(240,230,255,0.7);"></p>
+      </div>
+
+      <!-- 해설 카드 -->
+      <div class="detail-card">
+        <h3>📖 전생 해설</h3>
+        <p id="result-desc"></p>
+      </div>
+
+      <!-- 수행법 카드 -->
+      <div class="detail-card">
+        <h3>🙏 업보 정화 수행법</h3>
+        <ul class="practice-list" id="practice-list"></ul>
+      </div>
+
+      <!-- 액션 버튼 -->
+      <div class="action-buttons">
+        <button class="btn-retry" onclick="location.href='index.html'">다시 테스트하기</button>
+        <button class="btn-kakao" onclick="shareKakao()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.58 2 11c0 2.83 1.88 5.32 4.73 6.73-.16.58-.6 2.15-.69 2.48-.11.4.15.4.31.29.13-.08 2.04-1.38 2.86-1.94.88.13 1.8.2 2.79.2 5.5 0 10-3.58 10-8s-4.5-8-10-8z"/></svg>
+          카카오톡 공유
+        </button>
+      </div>
+
+      <!-- URL 복사 버튼 -->
+      <div style="text-align:center; margin-top:12px;">
+        <button class="btn-retry" onclick="copyUrl()" style="width:100%; font-size:0.9rem; padding:12px;">
+          🔗 결과 링크 복사하기
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 하단 프로모션 -->
+  <a href="../108-bonno/index.html" class="promo-banner">
+    <div class="promo-icon">🪷</div>
+    <div class="promo-text">
+      <div class="promo-title">108번뇌 심리테스트</div>
+      <div class="promo-desc">나를 지배하는 번뇌도 알아보세요</div>
+    </div>
+    <div class="promo-arrow">→</div>
+  </a>
+
+  <div class="footer">
+    <p>본 테스트는 재미를 위한 것이며 전문 심리 진단이 아닙니다.</p>
+    <p style="margin-top:10px;">
+      <a href="../privacy.html" style="color:rgba(255,255,255,0.4); text-decoration:none; margin:0 8px;">개인정보처리방침</a>
+      ·
+      <a href="../terms.html" style="color:rgba(255,255,255,0.4); text-decoration:none; margin:0 8px;">이용약관</a>
+    </p>
+  </div>
+
+  <!-- Kakao SDK -->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('35572843f4b2dc1f507f3d995ea01eaf');
+  </script>
+  <script src="js/result.js"></script>
+</body>
+</html>

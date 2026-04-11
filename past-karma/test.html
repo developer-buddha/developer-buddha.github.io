@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="ioeDOJQKzJH5UHhVr9XGqMgl3QtxfnQ2Wxu05IRZ3Dw" />
+  <title>전생 업보 테스트 진행 중... | 마음 연구소</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ4FPFX0TM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XQ4FPFX0TM');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div id="test-content">
+      <!-- 진행 바 -->
+      <div class="progress-area">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-text" id="progress-text">1 / 12</div>
+      </div>
+
+      <!-- 질문 카드 -->
+      <div class="question-card" id="question-card">
+        <span class="q-number" id="q-number">Q1</span>
+        <p class="q-text" id="q-text"></p>
+        <div class="options" id="options"></div>
+      </div>
+
+      <!-- 중간 명언 배너 (Q6 이후 표시) -->
+      <div class="quote-banner" id="quote-mid">
+        <span class="quote-icon">🪷</span>
+        <span class="quote-text">"과거의 업을 알고 싶으면 현재의 삶을 보라. 미래의 업을 알고 싶으면 현재의 행을 보라." — 인과경</span>
+      </div>
+    </div>
+
+    <!-- 로딩 화면 -->
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-icon">💫</div>
+      <p class="loading-text">전생의 기억을 불러오는 중...</p>
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <script src="js/test.js"></script>
+</body>
+</html>
