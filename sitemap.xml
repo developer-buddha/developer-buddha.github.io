@@ -157,6 +157,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://developer-buddha.github.io/articles/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://developer-buddha.github.io/articles/tamjinchi.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://developer-buddha.github.io/articles/108-bonno-meaning.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://developer-buddha.github.io/articles/karma-basics.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://developer-buddha.github.io/articles/mindfulness.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://developer-buddha.github.io/articles/buddhist-psychology.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://developer-buddha.github.io/privacy.html</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
